@@ -9,7 +9,8 @@
         "test-client": "cd client && npm test",
         "test-server": "cd server && npm test",
         "start": "concurrently -n client,server -c cyan,magenta \"npm run start-client\" \"npm run start-server\"",
-        "custom-install": "npm ci && cd client && npm ci && cd .. && cd server && npm ci"
+        "custom-install": "npm ci && cd client && npm ci && cd .. && cd server && npm ci",
+        "db-setup": "cd server && npm run db-setup"
     },
     "author": "",
     "license": "ISC",
